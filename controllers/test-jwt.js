@@ -10,8 +10,14 @@ router.get(`/sign-token`, (req, res) => {
   res.json({ token });
 });
 
+// router.post(`/verify-token`, (req, res) => {
+//   const token = req.headers.authorization;
+//   res.json({ token });
+// });
+
+// Above is without removing the bear tag and below is using the split method to remove it.
 router.post(`/verify-token`, (req, res) => {
-  const token = req.headers.authorization;
+  const token = req.headers.authorization.split(``)[1];
   res.json({ token });
 });
 

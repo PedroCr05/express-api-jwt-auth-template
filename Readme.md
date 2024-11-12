@@ -6,6 +6,8 @@
 
 - So when trying to get something to show up in the post for /test-jwt/signup. I keep getting a 404 Error. How do I test this properly?
 
+- Now with not knowing how to do the previous test. This actually snow balls into the next part of the testing. How do I test that my token even shows up and not a 404 error?
+
 ## Answered / Figured It Out
 
 - When creating the token. Is it possible to hide the token within the test? As in like instead of... is it possible to hide what is inside the parenthesis? Or is that not possible? (Never mind the lesson answered this question for me. We use the split method| .split(``)[1] )

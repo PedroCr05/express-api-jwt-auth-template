@@ -12,6 +12,8 @@
 
 - Uhh another issue! Can't even test the sign up?
 
+- Okay I figured out the problem. I forgot to do the you do of creating a user. In fact I don't actually know how you do that with this specific set up. Need a refresher for this method not in the way Jeremy has shown since that's different I believe.
+
 ```
 {
     "username": "<insert test username>",

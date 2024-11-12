@@ -17,7 +17,6 @@
 }
 ```
 
-- Okay I figured out the problem. I forgot to do the you do of creating a user. In fact I don't actually know how you do that with this specific set up. Need a refresher for this method not in the way Jeremy has shown since that's different I believe.
 
 - Ok from the sign up and onward I copied and pasted. Caught up but would need further explanation of what I did sadly. (We're on the `Using the verifyToken middleware`)
 
@@ -32,3 +31,5 @@
 ```
 
 - Where is the models file? So confusing... | Figured it out. Was actually simple. Went back to a previous project and basically copied and pasted.
+
+- Okay I figured out the problem. I forgot to do the you do of creating a user. In fact I don't actually know how you do that with this specific set up. Need a refresher for this method not in the way Jeremy has shown since that's different I believe.

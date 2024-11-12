@@ -1,0 +1,5 @@
+#Module Section
+node_modules
+
+#Secret Section
+.env

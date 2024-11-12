@@ -15,10 +15,17 @@ router.get(`/sign-token`, (req, res) => {
 //   res.json({ token });
 // });
 
-// Above is without removing the bear tag and below is using the split method to remove it.
+// Above is without removing the token string and below is using the split method to remove it.
+// The split method actually removed our token from the process but still passes through since this helps hide the string
 router.post(`/verify-token`, (req, res) => {
-  const token = req.headers.authorization.split(``)[1];
-  res.json({ token });
+  try {
+    const token = req.headers.authorization.split(``)[1];
+
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    res.json({ decoded });
+  } catch (error) {
+    res.status(401).json({ error: `Invalid token.` });
+  }
 });
 
 module.exports = router;

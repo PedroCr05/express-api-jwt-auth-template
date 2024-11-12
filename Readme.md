@@ -4,6 +4,8 @@
 
 - So kinda confused, but how exactly do I test the verifying of the token?
 
+- So when trying to get something to show up in the post for /test-jwt/signup. I keep getting a 404 Error. How do I test this properly?
+
 ## Answered / Figured It Out
 
 - When creating the token. Is it possible to hide the token within the test? As in like instead of... is it possible to hide what is inside the parenthesis? Or is that not possible? (Never mind the lesson answered this question for me. We use the split method| .split(``)[1] )

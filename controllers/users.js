@@ -21,4 +21,17 @@ router.post(`/signup`, async (req, res) => {
   }
 });
 
+router.post("/signin", async (req, res) => {
+  try {
+    const user = await User.findOne({ username: req.body.username });
+    if (user && bcrypt.compareSync(req.body.password, user.hashedPassword)) {
+      res.json({ message: "You are authorized!" });
+    } else {
+      res.json({ message: "Invalid credentials." });
+    }
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
+
 module.exports = router;

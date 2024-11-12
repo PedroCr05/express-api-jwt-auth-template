@@ -8,8 +8,6 @@
 
 - Now with not knowing how to do the previous test. This actually snow balls into the next part of the testing. How do I test that my token even shows up and not a 404 error?
 
-- Where is the models file? So confusing...
-
 - Uhh another issue! Can't even test the sign up?
 
 ```
@@ -32,3 +30,5 @@
   "token": "Bearer (The Token String here)"
 }
 ```
+
+- Where is the models file? So confusing... | Figured it out. Was actually simple. Went back to a previous project and basically copied and pasted.

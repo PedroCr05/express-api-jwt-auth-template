@@ -10,4 +10,8 @@ router.get(`/sign-token`, (req, res) => {
   res.json({ token });
 });
 
+router.post(`/verify-token`, (req, res) => {
+  res.json({ message: `Token is valid` });
+});
+
 module.exports = router;

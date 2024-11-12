@@ -16,7 +16,9 @@ router.post(`/signup`, async (req, res) => {
       hashedPassword: bcrypt.hashSync(req.body.password, SALT_LENGTH),
     });
     res.status(201).json({ user });
-  } catch (error) {}
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
 });
 
 module.exports = router;

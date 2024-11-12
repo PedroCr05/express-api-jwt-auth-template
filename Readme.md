@@ -8,11 +8,9 @@
 
 - Now with not knowing how to do the previous test. This actually snow balls into the next part of the testing. How do I test that my token even shows up and not a 404 error?
 
-- What is the models file even for? So confusing...
+- Where is the models file? So confusing...
 
 - Uhh another issue! Can't even test the sign up?
-
-- Okay I figured out the problem. I forgot to do the you do of creating a user. In fact I don't actually know how you do that with this specific set up. Need a refresher for this method not in the way Jeremy has shown since that's different I believe.
 
 ```
 {
@@ -20,6 +18,10 @@
     "password": "<insert test password>"
 }
 ```
+
+- Okay I figured out the problem. I forgot to do the you do of creating a user. In fact I don't actually know how you do that with this specific set up. Need a refresher for this method not in the way Jeremy has shown since that's different I believe.
+
+- Ok from the sign up and onward I copied and pasted. Caught up but would need further explanation of what I did sadly. (We're on the `Using the verifyToken middleware`)
 
 ## Answered / Figured It Out
 

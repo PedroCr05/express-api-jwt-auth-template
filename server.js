@@ -7,6 +7,7 @@ const testJWTRouter = require(`./controllers/test-jwt.js`);
 const usersRouter = require(`./controllers/users.js`);
 const profilesRouter = require(`./controllers/profiles.js`);
 const cors = require(`cors`);
+const morgan = require(`morgan`);
 
 mongoose.connect(process.env.MONGODB_URI);
 
@@ -15,7 +16,8 @@ mongoose.connection.on("connected", () => {
 });
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: `*` }));
+app.use(morgan(`dev`));
 
 app.use(`/test-jwt`, testJWTRouter);
 app.use(`/users`, usersRouter);
